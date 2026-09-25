@@ -1,0 +1,9 @@
+export enum SubjectType {
+  CORE = 'CORE',
+  ELECTIVE = 'ELECTIVE',
+  LANGUAGE = 'LANGUAGE',
+  PRACTICAL = 'PRACTICAL',
+  ACTIVITY = 'ACTIVITY',
+  SPORTS = 'SPORTS',
+  OTHER = 'OTHER',
+}

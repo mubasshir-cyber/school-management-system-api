@@ -1,0 +1,62 @@
+export enum CommonStatus {
+  ACTIVE = 'ACTIVE',
+  INACTIVE = 'INACTIVE',
+  ARCHIVED = 'ARCHIVED',
+  SUSPENDED = 'SUSPENDED',
+}
+
+export enum AdmissionStatus {
+  DRAFT = 'DRAFT',
+  SUBMITTED = 'SUBMITTED',
+  UNDER_REVIEW = 'UNDER_REVIEW',
+  APPROVED = 'APPROVED',
+  REJECTED = 'REJECTED',
+  ENROLLED = 'ENROLLED',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum EnrollmentStatus {
+  ACTIVE = 'ACTIVE',
+  TRANSFERRED = 'TRANSFERRED',
+  PROMOTED = 'PROMOTED',
+  WITHDRAWN = 'WITHDRAWN',
+  SUSPENDED = 'SUSPENDED',
+  GRADUATED = 'GRADUATED',
+}
+
+export enum AttendanceStatus {
+  PRESENT = 'PRESENT',
+  ABSENT = 'ABSENT',
+  LATE = 'LATE',
+  HALF_DAY = 'HALF_DAY',
+  LEAVE = 'LEAVE',
+  HOLIDAY = 'HOLIDAY',
+}
+
+export enum PaymentMethod {
+  CASH = 'CASH',
+  UPI = 'UPI',
+  BANK_TRANSFER = 'BANK_TRANSFER',
+  CARD = 'CARD',
+  CHEQUE = 'CHEQUE',
+  ONLINE = 'ONLINE',
+  OTHER = 'OTHER',
+}
+
+export enum PayrollStatus {
+  DRAFT = 'DRAFT',
+  CALCULATED = 'CALCULATED',
+  REVIEW = 'REVIEW',
+  APPROVED = 'APPROVED',
+  PAID = 'PAID',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum ExpenseStatus {
+  DRAFT = 'DRAFT',
+  PENDING = 'PENDING',
+  APPROVED = 'APPROVED',
+  REJECTED = 'REJECTED',
+  PAID = 'PAID',
+  CANCELLED = 'CANCELLED',
+}
