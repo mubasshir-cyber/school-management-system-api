@@ -1,0 +1,33 @@
+export enum ExamStatus {
+  DRAFT = 'DRAFT',
+  SCHEDULED = 'SCHEDULED',
+  ONGOING = 'ONGOING',
+  COMPLETED = 'COMPLETED',
+  RESULTS_PUBLISHED = 'RESULTS_PUBLISHED',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum GradingScaleType {
+  PERCENTAGE = 'PERCENTAGE',
+  GPA = 'GPA',
+  GRADE_ONLY = 'GRADE_ONLY',
+}
+
+export enum ExamScheduleStatus {
+  SCHEDULED = 'SCHEDULED',
+  COMPLETED = 'COMPLETED',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum StudentMarkStatus {
+  DRAFT = 'DRAFT',
+  SUBMITTED = 'SUBMITTED',
+  VERIFIED = 'VERIFIED',
+}
+
+export enum ResultStatus {
+  PASSED = 'PASSED',
+  FAILED = 'FAILED',
+  COMPARTMENT = 'COMPARTMENT',
+  WITHHELD = 'WITHHELD',
+}

@@ -22,6 +22,13 @@ import { Subject } from '../modules/subjects/entities/subject.entity';
 import { ClassSubject } from '../modules/class-subjects/entities/class-subject.entity';
 import { TeacherClassAssignment } from '../modules/teacher-assignments/entities/teacher-class-assignment.entity';
 import { TeacherSubjectAssignment } from '../modules/teacher-assignments/entities/teacher-subject-assignment.entity';
+import { NumberingSequence } from '../modules/students/entities/numbering-sequence.entity';
+import { Student } from '../modules/students/entities/student.entity';
+import { Guardian } from '../modules/guardians/entities/guardian.entity';
+import { StudentGuardian } from '../modules/guardians/entities/student-guardian.entity';
+import { Admission } from '../modules/admissions/entities/admission.entity';
+import { StudentEnrollment } from '../modules/enrollments/entities/student-enrollment.entity';
+import { StudentDocument } from '../modules/student-documents/entities/student-document.entity';
 
 export const typeOrmAsyncConfig: TypeOrmModuleAsyncOptions = {
   imports: [ConfigModule],
@@ -56,6 +63,13 @@ export const typeOrmAsyncConfig: TypeOrmModuleAsyncOptions = {
         ClassSubject,
         TeacherClassAssignment,
         TeacherSubjectAssignment,
+        NumberingSequence,
+        Student,
+        Guardian,
+        StudentGuardian,
+        Admission,
+        StudentEnrollment,
+        StudentDocument,
       ],
       synchronize: configService.get<boolean>('database.synchronize', false),
       logging: configService.get<boolean>('database.logging', false),

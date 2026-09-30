@@ -109,6 +109,37 @@ export class SeedService {
       { code: 'student.profile.update', module: 'student', resource: 'profile', action: 'update', name: 'Update Student Profile' },
       { code: 'student.profile.delete', module: 'student', resource: 'profile', action: 'delete', name: 'Delete Student Profile' },
       { code: 'student.profile.export', module: 'student', resource: 'profile', action: 'export', name: 'Export Student Records' },
+      { code: 'student.profile.import', module: 'student', resource: 'profile', action: 'import', name: 'Import Student Records' },
+
+      // Guardians
+      { code: 'guardian.profile.create', module: 'guardian', resource: 'profile', action: 'create', name: 'Create Guardian' },
+      { code: 'guardian.profile.read', module: 'guardian', resource: 'profile', action: 'read', name: 'Read Guardian Profile' },
+      { code: 'guardian.profile.update', module: 'guardian', resource: 'profile', action: 'update', name: 'Update Guardian Profile' },
+      { code: 'guardian.profile.delete', module: 'guardian', resource: 'profile', action: 'delete', name: 'Delete Guardian Profile' },
+
+      // Admissions
+      { code: 'admission.create', module: 'admission', resource: 'application', action: 'create', name: 'Create Admission Application' },
+      { code: 'admission.read', module: 'admission', resource: 'application', action: 'read', name: 'Read Admission Applications' },
+      { code: 'admission.update', module: 'admission', resource: 'application', action: 'update', name: 'Update Admission Application' },
+      { code: 'admission.submit', module: 'admission', resource: 'application', action: 'submit', name: 'Submit Admission Application' },
+      { code: 'admission.review', module: 'admission', resource: 'application', action: 'review', name: 'Review Admission Application' },
+      { code: 'admission.approve', module: 'admission', resource: 'application', action: 'approve', name: 'Approve Admission Application' },
+      { code: 'admission.reject', module: 'admission', resource: 'application', action: 'reject', name: 'Reject Admission Application' },
+      { code: 'admission.enroll', module: 'admission', resource: 'application', action: 'enroll', name: 'Enroll Approved Student' },
+
+      // Enrollments
+      { code: 'enrollment.create', module: 'enrollment', resource: 'record', action: 'create', name: 'Enroll Student' },
+      { code: 'enrollment.read', module: 'enrollment', resource: 'record', action: 'read', name: 'Read Enrollments' },
+      { code: 'enrollment.update', module: 'enrollment', resource: 'record', action: 'update', name: 'Update Enrollment' },
+      { code: 'enrollment.transfer', module: 'enrollment', resource: 'record', action: 'transfer', name: 'Transfer Student Enrollment' },
+      { code: 'enrollment.withdraw', module: 'enrollment', resource: 'record', action: 'withdraw', name: 'Withdraw Student Enrollment' },
+
+      // Student Documents
+      { code: 'student.document.create', module: 'student', resource: 'document', action: 'create', name: 'Upload Student Document' },
+      { code: 'student.document.read', module: 'student', resource: 'document', action: 'read', name: 'Read Student Documents' },
+      { code: 'student.document.update', module: 'student', resource: 'document', action: 'update', name: 'Update Student Document' },
+      { code: 'student.document.delete', module: 'student', resource: 'document', action: 'delete', name: 'Delete Student Document' },
+      { code: 'student.document.verify', module: 'student', resource: 'document', action: 'verify', name: 'Verify Student Document' },
 
       // Staff & HR
       { code: 'staff.profile.create', module: 'staff', resource: 'profile', action: 'create', name: 'Create Staff' },

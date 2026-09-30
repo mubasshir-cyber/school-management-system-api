@@ -8,6 +8,7 @@ import {
   Unique,
 } from 'typeorm';
 import { Role } from './role.entity';
+import { User } from '../../users/entities/user.entity';
 import { DataScope } from '../../../common/enums/scope.enum';
 
 @Entity('user_roles')
@@ -18,6 +19,10 @@ export class UserRole {
 
   @Column({ name: 'user_id', type: 'uuid' })
   userId: string;
+
+  @ManyToOne(() => User, (user) => user.userRoles, { onDelete: 'CASCADE' })
+  @JoinColumn({ name: 'user_id' })
+  user: User;
 
   @Column({ name: 'role_id', type: 'uuid' })
   roleId: string;

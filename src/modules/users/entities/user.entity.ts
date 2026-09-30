@@ -86,7 +86,7 @@ export class User {
   @Column({ name: 'last_login_ip', type: 'varchar', length: 50, nullable: true })
   lastLoginIp?: string;
 
-  @OneToMany(() => UserRole, (userRole) => userRole.userId)
+  @OneToMany(() => UserRole, (userRole) => userRole.user)
   userRoles: UserRole[];
 
   @CreateDateColumn({ name: 'created_at', type: 'timestamptz' })
